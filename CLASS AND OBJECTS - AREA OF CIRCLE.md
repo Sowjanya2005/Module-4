@@ -8,7 +8,7 @@ To write a Python program to take the radius from the user and find the area of 
 
 ---
 
-### ALGORITHM
+### ALGORITHMng
 
 1. Begin the program.  
 2. Create a class named `umbrella`.  
