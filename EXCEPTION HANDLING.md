@@ -1,12 +1,8 @@
 # Exp.No:17  
 ## EXCEPTION HANDLING
 
----
-
 ### AIM  
 To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
-
----
 
 ### ALGORITHM
 
@@ -18,17 +14,25 @@ To create a Python program that prompts the user for a list of grades separated 
 6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
 7. Terminate the program.
 
----
-
 ### PROGRAM
 
 ```
-Reg.No
-Name
-Add Your Code Here
+Reg.No: 212222060250
+Name: Sowjanya A
+
+user_input = input()
+grades_str = user_input.split(',')
+try:
+    grades = [int(g) for g in grades_str]
+    print(grades)
+except ValueError:
+    print("The grades you entered were in an invalid format.")
+    print(grades_str)
 
 ```
 
 ### OUTPUT
+<img width="1133" height="223" alt="image" src="https://github.com/user-attachments/assets/4f3b473e-5d81-482e-b5fd-fe0818105a45" />
 
 ### RESULT
+Thus, a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers are verified.
