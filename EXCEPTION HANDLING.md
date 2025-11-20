@@ -15,24 +15,22 @@ To create a Python program that prompts the user for a list of grades separated 
 7. Terminate the program.
 
 ### PROGRAM
-
 ```
 Reg.No: 212222060250
 Name: Sowjanya A
 
-user_input = input()
-grades_str = user_input.split(',')
+input_str = input("Enter grades separated by commas: ")
+grades = input_str.split(',')
 try:
-    grades = [int(g) for g in grades_str]
-    print(grades)
+    l1 = [int(grade.strip()) for grade in grades]
+    print("Converted grade list:", l1)
 except ValueError:
     print("The grades you entered were in an invalid format.")
-    print(grades_str)
-
+    print("Original input list:", grades)
 ```
 
 ### OUTPUT
-<img width="1133" height="223" alt="image" src="https://github.com/user-attachments/assets/4f3b473e-5d81-482e-b5fd-fe0818105a45" />
+![image](https://github.com/user-attachments/assets/da6093fa-a827-4b08-a229-f6da44720cd1)
 
 ### RESULT
-Thus, a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers are verified.
+Thus, the python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers has been executed and verified successfully.
